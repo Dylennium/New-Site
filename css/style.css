@@ -1,0 +1,12 @@
+html{
+    background-color: black;
+}
+
+.info p{
+    font-size: 28px;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    text-align:center;
+    position: relative;
+    top: 20ch;
+}
