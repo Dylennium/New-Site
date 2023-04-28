@@ -21,7 +21,6 @@
 
 <script>
     var lines=[
-        "STARTING SYSTEM CONFIGURATION:",
 "[  OK  ] Starting Tell Plymouth To Write Out Runtime Data...",
 "[  OK  ] Starting Uncomplicated firewall...",
 "[  OK  ] Finished Create final runtime dir for shutdown pivot root.",
@@ -58,7 +57,7 @@
 "[  OK  ] Starting Network Name Resolution..."
 ]
  var typed6 = new Typed('#loginblurb', {
-    strings: [lines.map((line)=>`\`${line}\`^${Math.trunc(Math.random()*500+100)}`).join("\n")],
+    strings: [lines.map((line)=>`\`${line}\``).join("^200\n")],
 
     loop: false,
     onComplete: (self) => {

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Imports Typed.JS -->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <title>Dylennium</title>
+</head>
+<body>
+    <div class="info">
+        <p>But we are hackers and <br> hackers have black <br> terminals with green <br> font colors!</p>
+    </div>
+
+<div class="element">
+    <span id="loginblurb"></span>
+</div>
+
+<script>
+    var lines=["a","b","c","d"]
+ var typed6 = new Typed('#loginblurb', {
+    strings: [lines.join("^1000\n")],
+
+    loop: false,
+    onComplete: (self) => {
+        window.location.href = "/login.html"
+    },
+  });
+</script>
+
+</body>
+</html>

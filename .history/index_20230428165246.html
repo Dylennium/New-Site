@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Imports Typed.JS -->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <title>Dylennium</title>
+</head>
+<body>
+    <div class="info">
+        <p>But we are hackers and <br> hackers have black <br> terminals with green <br> font colors!</p>
+    </div>
+
+<div class="element">
+    <span id="loginblurb"></span>
+</div>
+
+<script>
+    var lines=[
+"Starting Tell Plymouth To Write Out Runtime Data...",
+"Starting Uncomplicated firewall...",
+"Finished Create final runtime dir for shutdown pivot root.",
+"Started Rule—based Manager for Device Events and Files.",
+"Finished Set console font and keymap.",
+"Finished Tell Plymouth To Write Out Runtime Data.",
+"Started Journal Service.",
+"Starting Flush Journal to Persistent Storage...",
+"Finished Load Apparmor profiles.",
+"Starting Load Apparmor profiles managed internally bu snapd...",
+"Mounting Arbitrary Executable File Formats File System..",
+"Mounted Arbitrary Executable File Formats File System.",
+"Finished Flush Journal to Persistent Storage.",
+"Starting Create Volatile Files and Directories...",
+"Finished Coldplug All udev Devices.",
+"Started Dispatch Password Requests to Console Directorg Hatch.",
+"Reached target Local Encrgpted Volumes.",
+"Finished Create Volatile Files and Directories.",
+"Starting Network Time Sgnchronization...",
+"Starting Record Sgstem Boot/Shutdoun in UTMP...",
+"Started Authentication service for virtual machines hosted on VMware.",
+"Started Service for virtual machines hosted on VMware.",
+"Starting Initial cloud—init job (pre—networking)...",
+"Finished Record Sgstem Boot/Shutdoun in UTMP.",
+"Finished Uncomplicated firewall.",
+"Started Network Time Sgnchronization.",
+"Reached target Sgstem Time Set.",
+"Finished Load Appnrmor profiles managed internally by snapd.",
+"Finished Initial cloud—init job (ore—networking).",
+"Reached target Preparation for Network.",
+"Starting Network Configuration...",
+"Started Network Configuration.",
+"Starting Hait for Network to be Configured...",
+"Starting Network Name Resolution..."
+]
+ var typed6 = new Typed('#loginblurb', {
+    strings: [lines.join("^1000\n")],
+
+    loop: false,
+    onComplete: (self) => {
+        window.location.href = "/login.html"
+    },
+  });
+</script>
+
+</body>
+</html>
